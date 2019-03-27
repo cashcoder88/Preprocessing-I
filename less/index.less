@@ -53,6 +53,13 @@ table {
     box-sizing: border-box;
 }
 
+@color1: #0C0032;
+@color2: #190061;
+@color3: #240090;
+@color4: #3500D3;
+@color5: #282828;
+
+
 html, body {
     height: 100%;
     font-family: 'Source Code Pro', monospace;
@@ -61,14 +68,25 @@ html, body {
 .container {
     width: 100%;
     border: 1px solid red;
+    background: @color5;
+    color: white;
 }
 
 header {
+    display: flex;
+    justify-content: flex-end;
     
+    nav { 
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
 
 .main {
-    border: 1px solid blue;
+    
 }
 
 .contact {
@@ -77,4 +95,10 @@ header {
 
 .footer {
     
+}
+
+.profile_img {
+    height: 200px;
+    width: 200px;
+    background: @color2;
 }
