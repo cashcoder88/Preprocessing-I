@@ -170,6 +170,12 @@ header .nav_top a {
   color: white;
   margin: 0 10px;
 }
+@media (max-width: 500px) {
+  .main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .main .intro_section {
   display: flex;
   justify-content: space-evenly;
@@ -177,6 +183,12 @@ header .nav_top a {
   align-items: center;
   background: #190061;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .main .intro_section .profile_img {
+    width: 31%;
+    height: auto;
+  }
 }
 .main .intro_section h1 {
   margin: 2%;
