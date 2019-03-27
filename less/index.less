@@ -72,15 +72,26 @@ html, body {
     width: 100%;
     background: @color5;
     color: white;
-    margin-bottom: 0;
+    
+    @media (max-width: 500px) {
+        background: red;
+    }
 }
 
 header {
     .mixin_flex;
     justify-content: flex-end;
     
+    @media (max-width: 500px) {
+        justify-content: center;
+    }
+    
     .nav_top { 
         margin: 10px 10px;
+        
+        @media (max-width: 500px) {
+        margin: 10px 1px;
+    }
         
         a {
             text-decoration: none;
@@ -91,7 +102,7 @@ header {
 }
 
 .main {
-    margin: 0 1% 0 1%;
+    
     .intro_section {
         .mixin_flex;
         justify-content: space-evenly;
@@ -99,6 +110,7 @@ header {
         align-items: center;
         background: @color2;
         padding: 2%;
+         
         h1 {
             margin: 2%;
         }
@@ -126,6 +138,10 @@ header {
         margin: 3%;
         font-size: 20px;
         padding: 2%;
+        
+        @media (max-width: 500px) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -173,3 +189,4 @@ footer {
     width: 200px;
     background: @color2;
 }
+

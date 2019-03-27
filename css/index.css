@@ -142,22 +142,33 @@ body {
   width: 100%;
   background: #282828;
   color: white;
-  margin-bottom: 0;
+}
+@media (max-width: 500px) {
+  .container {
+    background: red;
+  }
 }
 header {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 500px) {
+  header {
+    justify-content: center;
+  }
+}
 header .nav_top {
   margin: 10px 10px;
+}
+@media (max-width: 500px) {
+  header .nav_top {
+    margin: 10px 1px;
+  }
 }
 header .nav_top a {
   text-decoration: none;
   color: white;
   margin: 0 10px;
-}
-.main {
-  margin: 0 1% 0 1%;
 }
 .main .intro_section {
   display: flex;
@@ -189,6 +200,11 @@ header .nav_top a {
   margin: 3%;
   font-size: 20px;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .skills .skills_section2 {
+    font-size: 16px;
+  }
 }
 .work {
   display: flex;
