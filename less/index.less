@@ -53,7 +53,152 @@ table {
     box-sizing: border-box;
 }
 
+@color1: #0C0032;
+@color2: #190061;
+@color3: #240090;
+@color4: #3500D3;
+@color5: #282828;
+
+.mixin_flex {
+    display: flex;
+}
+
 html, body {
     height: 100%;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.container {
+    width: 100%;
+    background: @color5;
+    color: white;
+    
+    @media (max-width: 500px) {
+        background: red;
+    }
+}
+
+header {
+    .mixin_flex;
+    justify-content: flex-end;
+    
+    @media (max-width: 500px) {
+        justify-content: center;
+    }
+    
+    .nav_top { 
+        margin: 10px 10px;
+        
+        @media (max-width: 500px) {
+        margin: 10px 1px;
+    }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            margin: 0 10px;
+        }
+    }
+}
+
+.main {
+    
+    
+    @media (max-width: 500px) {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .intro_section {
+        .mixin_flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        background: @color2;
+        padding: 2%;
+        
+        @media (max-width: 500px) {
+            .profile_img {
+                width: 31%;
+                height: auto;
+            }
+        }
+         
+        h1 {
+            margin: 2%;
+        }
+        
+        p {
+            margin: 5px;
+        }
+    }
+}
+
+.skills {
+    .mixin_flex;
+    justify-content: space-evenly;
+    
+    .skills_section1 {
+        background: @color3;
+        width: 45%;
+        margin: 3%;
+        padding: 2%;
+    }
+    
+    .skills_section2 {
+        width: 45%;
+        background: @color3;
+        margin: 3%;
+        font-size: 20px;
+        padding: 2%;
+        
+        @media (max-width: 500px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.work {
+    .mixin_flex;
+    justify-content: center;
+    
+    
+    .work_section {
+        justify-content: center;
+        background: @color4;
+        margin: 2.5%;
+        width: 50%;
+        padding: 1%;
+    }
+}
+
+.contact {
+    .mixin_flex;
+    justify-content: center;
+    margin: 10px;
+    
+    
+    .contact_section {
+        background: @color3;
+        padding: 20px;
+    }
+    
+}
+
+footer {
+    .mixin_flex;
+    
+    .footer {
+        justify-content: center;
+        margin: 2%;
+        background: @color2;
+        width: 35%;
+    }   
+}
+    
+
+.profile_img {
+    height: 200px;
+    width: 200px;
+    background: @color2;
 }
 
