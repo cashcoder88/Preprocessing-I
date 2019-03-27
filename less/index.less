@@ -67,34 +67,93 @@ html, body {
 
 .container {
     width: 100%;
-    border: 1px solid red;
     background: @color5;
     color: white;
+    margin-bottom: 0;
 }
 
 header {
     display: flex;
     justify-content: flex-end;
     
-    nav { 
+    .nav_top { 
+        margin: 10px 10px;
         
         a {
             text-decoration: none;
             color: white;
+            margin: 0 10px;
         }
     }
 }
 
 .main {
+    .intro_section {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        align-items: center;
+        background: @color2;
+        
+        h1 {
+            margin: 2%;
+        }
+        
+        p {
+            margin: 5px;
+        }
+    }
+}
+
+.skills {
+    display: flex;
+    justify-content: space-evenly;
     
+    .skills_section1 {
+        background: @color3;
+        width: 45%;
+        margin: 3%;
+        padding: 2%;
+    }
+    
+    .skills_section2 {
+        width: 45%;
+        background: @color3;
+        margin: 3%;
+        font-size: 20px;
+        padding: 2%;
+    }
+}
+
+.work {
+    display: flex;
+    justify-content: center;
+    
+    
+    .work_section {
+        background: @color4;
+        margin: 2.5%;
+        width: 90%;
+    }
 }
 
 .contact {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+    
+    .contact_section {
+        background: @color3;
+        padding: 20px;
+    }
     
 }
 
 .footer {
-    
+    display: flex;
+    justify-content: center;
+    margin: 2%;
 }
 
 .profile_img {

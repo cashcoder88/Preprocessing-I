@@ -137,17 +137,74 @@ body {
 }
 .container {
   width: 100%;
-  border: 1px solid red;
   background: #282828;
   color: white;
+  margin-bottom: 0;
 }
 header {
   display: flex;
   justify-content: flex-end;
 }
-header nav a {
+header .nav_top {
+  margin: 10px 10px;
+}
+header .nav_top a {
   text-decoration: none;
   color: white;
+  margin: 0 10px;
+}
+.main .intro_section {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  background: #190061;
+}
+.main .intro_section h1 {
+  margin: 2%;
+}
+.main .intro_section p {
+  margin: 5px;
+}
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+}
+.skills .skills_section1 {
+  background: #240090;
+  width: 45%;
+  margin: 3%;
+  padding: 2%;
+}
+.skills .skills_section2 {
+  width: 45%;
+  background: #240090;
+  margin: 3%;
+  font-size: 20px;
+  padding: 2%;
+}
+.work {
+  display: flex;
+  justify-content: center;
+}
+.work .work_section {
+  background: #3500D3;
+  margin: 2.5%;
+  width: 90%;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.contact .contact_section {
+  background: #240090;
+  padding: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
 }
 .profile_img {
   height: 200px;
