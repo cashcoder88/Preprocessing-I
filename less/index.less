@@ -59,6 +59,9 @@ table {
 @color4: #3500D3;
 @color5: #282828;
 
+.mixin_flex {
+    display: flex;
+}
 
 html, body {
     height: 100%;
@@ -73,7 +76,7 @@ html, body {
 }
 
 header {
-    display: flex;
+    .mixin_flex;
     justify-content: flex-end;
     
     .nav_top { 
@@ -88,13 +91,14 @@ header {
 }
 
 .main {
+    margin: 0 1% 0 1%;
     .intro_section {
-        display: flex;
+        .mixin_flex;
         justify-content: space-evenly;
         flex-direction: row;
         align-items: center;
         background: @color2;
-        
+        padding: 2%;
         h1 {
             margin: 2%;
         }
@@ -106,7 +110,7 @@ header {
 }
 
 .skills {
-    display: flex;
+    .mixin_flex;
     justify-content: space-evenly;
     
     .skills_section1 {
@@ -126,19 +130,21 @@ header {
 }
 
 .work {
-    display: flex;
+    .mixin_flex;
     justify-content: center;
     
     
     .work_section {
+        justify-content: center;
         background: @color4;
         margin: 2.5%;
-        width: 90%;
+        width: 50%;
+        padding: 1%;
     }
 }
 
 .contact {
-    display: flex;
+    .mixin_flex;
     justify-content: center;
     margin: 10px;
     
@@ -150,11 +156,17 @@ header {
     
 }
 
-.footer {
-    display: flex;
-    justify-content: center;
-    margin: 2%;
+footer {
+    .mixin_flex;
+    
+    .footer {
+        justify-content: center;
+        margin: 2%;
+        background: @color2;
+        width: 35%;
+    }   
 }
+    
 
 .profile_img {
     height: 200px;
